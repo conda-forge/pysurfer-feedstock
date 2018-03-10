@@ -19,9 +19,7 @@ high-level interface for working with MRI and MEG data.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pysurfer-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pysurfer-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pysurfer-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pysurfer-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pysurfer-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pysurfer-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/pysurfer-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pysurfer-feedstock)
 
 Current release info
 ====================

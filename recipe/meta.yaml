@@ -11,9 +11,11 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
-  skip: True  # [osx and py3k]
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 1
+  noarch: python
+  script:
+    - conda config --append channels menpo   # [osx and py3k]
+    - python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
   build:
@@ -34,8 +36,8 @@ requirements:
 
 test:
   commands:
-    - pysurfer --help                                              # [not linux]
-    - DISPLAY=localhost:1.0 xvfb-run -a bash -c 'pysurfer --help'  # [linux]
+    - DISPLAY=localhost:1.0 xvfb-run -a python -c "import surfer"  # [linux]
+    - python -c "import surfer"  # [not linux]
 
 about:
   home: http://pysurfer.github.com
