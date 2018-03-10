@@ -12,6 +12,7 @@ source:
 
 build:
   number: 0
+  noarch: python
   script:
     - conda config --append channels menpo   # [osx and py3k]
     - python setup.py install --single-version-externally-managed --record record.txt
