@@ -12,8 +12,9 @@ source:
 
 build:
   number: 0
-  skip: True  # [osx and py3k]
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script:
+    - conda config --append channels menpo   # [osx and py3k]
+    - python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
   build:
