@@ -35,7 +35,7 @@ requirements:
 
 test:
   commands:
-    - DISPLAY=localhost:1.0 xvfb-run -a python -c "import surfer"  # [linux]
+#    - DISPLAY=localhost:1.0 xvfb-run -a python -c "import surfer"  # [linux]
     - python -c "import surfer"  # [not linux]
 
 about:
