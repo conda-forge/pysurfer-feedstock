@@ -1,5 +1,5 @@
-{% set version = "0.9.0" %}
-{% set sha256 = "fe352e7d83d14bc15cf5c813ab2a55400f35fb1d1b4a222abf8a6ba5ba26f667" %}
+{% set version = "0.10.0" %}
+{% set sha256 = "042febbfe9c6fc41c9140b912f633d6cc813c714a36a8864421ccee0826470f1" %}
 
 package:
   name: pysurfer
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script:
     - python setup.py install --single-version-externally-managed --record record.txt
@@ -41,6 +41,7 @@ test:
 about:
   home: http://pysurfer.github.com
   license: BSD-3-clause
+  license_file: LICENSE
   license_family: BSD
   summary: 'Cortical surface visualization using Python'
 
