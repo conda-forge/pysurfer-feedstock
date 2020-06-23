@@ -1,5 +1,5 @@
-{% set version = "0.10.0" %}
-{% set sha256 = "042febbfe9c6fc41c9140b912f633d6cc813c714a36a8864421ccee0826470f1" %}
+{% set version = "0.11.0" %}
+{% set sha256 = "ae709b6f933694f1810eb3c8f517bdb76c13576d74a7a5a1704e05239df0a179" %}
 
 package:
   name: pysurfer
@@ -39,7 +39,7 @@ about:
   license: BSD-3-clause
   license_file: LICENSE
   license_family: BSD
-  summary: 'Cortical surface visualization using Python'
+  summary: Cortical surface visualization using Python
 
   description: |
     PySurfer is a Python library for visualizing cortical surface
