@@ -1,5 +1,5 @@
-{% set version = "0.11.0" %}
-{% set sha256 = "ae709b6f933694f1810eb3c8f517bdb76c13576d74a7a5a1704e05239df0a179" %}
+{% set version = "0.11.1" %}
+{% set sha256 = "798253a2dc1075664deab10bfddeec8e915caeb5a3ab0c1bd4e2a992b2cfd969" %}
 
 package:
   name: pysurfer
@@ -17,7 +17,7 @@ build:
     - python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
-  build:
+  host:
     - python >=3.5
     - pip
   run:
