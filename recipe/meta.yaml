@@ -1,5 +1,5 @@
-{% set version = "0.11.1" %}
-{% set sha256 = "798253a2dc1075664deab10bfddeec8e915caeb5a3ab0c1bd4e2a992b2cfd969" %}
+{% set version = "0.11.2" %}
+{% set sha256 = "277a72b0f8ae60c00f4d2702f33917cc6b225a36313fcead1aa119b45197d248" %}
 
 package:
   name: pysurfer
