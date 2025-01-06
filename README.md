@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pysurfer-feedst
 
 Home: http://pysurfer.github.com
 
-Package license: BSD-3-clause
+Package license: BSD-3-Clause
 
 Summary: Cortical surface visualization using Python
 
