@@ -39,7 +39,7 @@ test:
 
 about:
   home: http://pysurfer.github.com
-  license: BSD-3-clause
+  license: BSD-3-Clause
   license_file: LICENSE
   license_family: BSD
   summary: Cortical surface visualization using Python
