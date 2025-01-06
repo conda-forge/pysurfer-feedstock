@@ -32,8 +32,8 @@ test:
   requires:
     - python {{ python_min }}
   commands:
-#    - DISPLAY=localhost:1.0 xvfb-run -a python -c "import surfer"  # [linux]
-    - python -c "import surfer"  # [not linux]
+    # - DISPLAY=localhost:1.0 xvfb-run -a python -c "import surfer"  # [linux]
+    - "python -c \"import surfer\""  # [not linux]
 
 about:
   home: http://pysurfer.github.com
@@ -41,7 +41,6 @@ about:
   license_file: LICENSE
   license_family: BSD
   summary: Cortical surface visualization using Python
-
   description: |
     PySurfer is a Python library for visualizing cortical surface
     representations of neuroimaging data. The package is primarily intended for
