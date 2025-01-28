@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 2
   noarch: python
 
 requirements:
@@ -30,10 +30,10 @@ requirements:
 
 test:
   requires:
-    - python {{ python_min }}
+    - python {{ python_min }
   commands:
-    # - DISPLAY=localhost:1.0 xvfb-run -a python -c "import surfer"  # [linux]
-    - "python -c \"import surfer\""  # [not linux]
+    - "xvfb-run -a python -c \"import surfer; assert surfer.__version__ == "{{ version}}", surfer.__version__"  # [linux]
+    - "python -c \"import surfer\"; assert surfer.__version__ == \"{{ version }}\", surfer.__version__"  # [not linux]
 
 about:
   home: http://pysurfer.github.com
