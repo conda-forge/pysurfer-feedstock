@@ -32,7 +32,7 @@ test:
   requires:
     - python {{ python_min }
   commands:
-    - "xvfb-run -a python -c \"import surfer; assert surfer.__version__ == "{{ version}}", surfer.__version__"  # [linux]
+    - "xvfb-run -a python -c \"import surfer; assert surfer.__version__ == "{{ version}}", surfer.__version__\""  # [linux]
     - "python -c \"import surfer\"; assert surfer.__version__ == \"{{ version }}\", surfer.__version__"  # [not linux]
 
 about:
