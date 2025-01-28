@@ -30,10 +30,10 @@ requirements:
 
 test:
   requires:
-    - python {{ python_min }
+    - python {{ python_min }}
   commands:
-    - "xvfb-run -a python -c \"import surfer; assert surfer.__version__ == "{{ version}}", surfer.__version__\""  # [linux]
-    - "python -c \"import surfer\"; assert surfer.__version__ == \"{{ version }}\", surfer.__version__"  # [not linux]
+    - "xvfb-run -a python -c \"import surfer; assert surfer.__version__ == '{{ version }}', surfer.__version__\""  # [linux]
+    - "python -c \"import surfer; assert surfer.__version__ == '{{ version }}', surfer.__version__\""  # [not linux]
 
 about:
   home: http://pysurfer.github.com
